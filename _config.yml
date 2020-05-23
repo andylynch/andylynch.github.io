@@ -1,0 +1,8 @@
+title: Andylynch.github.io
+description: Personal Profile
+google_analytics: UA-43266846-1
+show_downloads: true
+theme: jekyll-theme-midnight
+
+gems:
+  - jekyll-mentions
