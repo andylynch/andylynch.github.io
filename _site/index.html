@@ -19,10 +19,28 @@
 
         <header>
           <h1>Andylynch.github.io</h1>
-          <h2><a href="./profile.html" > CV </a>
+          <h2><a href="./cv.html" > CV </a>
 </h2>
         </header>
 
-  </div></div>
+  </div>
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  {% for tag in site.tags %}
+  <h3>{{ tag[0] }}</h3>
+  <ul>
+    {% for post in tag[1] %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% endfor %}
+
+</div>
   </body>
 </html>
