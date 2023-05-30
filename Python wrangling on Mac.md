@@ -1,6 +1,7 @@
 ---
 share: true
 layout: post
+categories: python
 ---
 
 - Install [pyenv](https://github.com/pyenv/pyenv)  via Homebrew and set up in the shell
