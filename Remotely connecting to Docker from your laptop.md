@@ -30,7 +30,7 @@ IntelliJ IDEA Ultimate  also supports SSH contexts [see here](https://www.jetbra
 ### Option 1: Use SSH port forwarding
 1. on the remote host, run `unix:///var/run/docker.sock` and not the endpoint, something like `unix:///var/run/docker.sock` for the default one.
 2. Use ssh local port forwarding, e.g.:
-	```shell 
+```shell 
 ssh -vnNTL ~/.remote-docker.sock:/var/run/docker.sock tux.local
 docker context create  tuxssh --docker host=unix:///Users/andy/.remote-docker.sock
 
