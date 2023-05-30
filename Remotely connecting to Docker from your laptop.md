@@ -1,6 +1,7 @@
 ---
-layout: post
+layout: default
 share: true
+permalink: /docker-connections
 ---
 
 
